@@ -16,7 +16,7 @@ export interface ICardProps {
 
 function Card({ experience }: ICardProps) {
   return (
-    <aside className=" flex w-full cursor-pointer   flex-col items-start justify-normal overflow-hidden rounded-xl border-[0.5px] border-[rgba(225,225,225,0.2)] p-4 transition-all duration-500 hover:scale-110 hover:border-2 hover:border-[rgba(225,225,225,1)] lg:mb-0">
+    <aside className="card flex w-full cursor-pointer   flex-col items-start justify-normal overflow-hidden rounded-xl border-[0.5px] border-[rgba(225,225,225,0.2)] p-4 transition-all duration-500  hover:border-2 hover:border-[rgba(225,225,225,1)] lg:mb-0">
       <p className="mb-3 text-2xl uppercase">{experience.position}</p>
       <span className="mb-2 text-sm font-extralight">{experience.company}</span>
       <span className="mb-2 text-sm font-extralight">{experience.date}</span>

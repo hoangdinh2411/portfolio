@@ -25,6 +25,7 @@ ol.stepper li {
   position: relative;
   gap: 40px;
   margin-bottom: 40px;
+  margin-top: 40px;
   transition: all 0.5s ease;
 }
 ol.stepper li::before {
