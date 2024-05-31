@@ -27,7 +27,7 @@ const menuItems = [
   },
   {
     name: "Resume",
-    link: "/Resume",
+    link: "/resume",
     icon: "/icons/resume.svg",
   },
 ];
@@ -60,13 +60,13 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className=" hidden lg:block flex-1 absolute lg:relative top-full lg:top-0 right-0 z-20 bg-black lg:bg-inherit lg:border-none border-[0.5px] border-[rgba(225,225,225,0.2)]"
+      className=" absolute right-0 top-full z-20 hidden flex-1 border-[0.5px] border-[rgba(225,225,225,0.2)] bg-black lg:relative lg:top-0 lg:block lg:border-none lg:bg-inherit"
     >
-      <ul className=" block lg:flex justify-center items-center h-full">
+      <ul className=" block h-full items-center justify-center lg:flex">
         {menuItems.map((item) => (
           <li key={item.name} className="h-full font-medium  ">
             <Link
-              className={`flex justify-start lg:justify-between items-center hover:bg-[#1E1E1E] h-full px-4 py-2 ${
+              className={`flex h-full items-center justify-start px-4 py-2 hover:bg-[#1E1E1E] lg:justify-between ${
                 pathname === item.link ? "bg-[#1E1E1E]" : ""
               }`}
               href={item.link}
@@ -76,7 +76,7 @@ export default function Navbar() {
                 width={18}
                 height={18}
                 alt={item.name}
-                className="cursor-pointer mr-4"
+                className="mr-4 cursor-pointer"
               />
               {item.name}
             </Link>

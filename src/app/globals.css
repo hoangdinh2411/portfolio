@@ -2,69 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
+@font-face {
   font-family: "Space Mono", monospace;
-  src:url('/public/font/SpaceMono-Bold.ttf');
+  src: url("/public/font/SpaceMono-Bold.ttf");
   font-weight: bold;
 }
-@font-face{
+@font-face {
   font-family: "Space Mono", monospace;
-  src:url('/public/font/SpaceMono-BoldItalic.ttf');
+  src: url("/public/font/SpaceMono-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
-@font-face{
+@font-face {
   font-family: "Space Mono", monospace;
-  src:url('/public/font/SpaceMono-Italic.ttf');
+  src: url("/public/font/SpaceMono-Italic.ttf");
   font-style: italic;
   font-weight: 400;
-
 }
-@font-face{
+@font-face {
   font-family: "Space Mono", monospace;
-  src:url('/public/font/SpaceMono-Regular.ttf');
+  src: url("/public/font/SpaceMono-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 16px;
-  
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
 @layer utilities {
- 
 }
-
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation:
     typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-  
+    blink-caret 0.75s step-end infinite;
 }
-
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
-
 
 #menu:checked + #navbar {
   display: block;
@@ -77,16 +84,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black; 
+  background: black;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black; 
+  background: black;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: black; 
+  background: black;
 }
 
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
