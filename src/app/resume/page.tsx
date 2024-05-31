@@ -8,8 +8,8 @@ function Resume() {
       <h1 className="mb-20 text-center text-6xl">My Resume</h1>
       <Link
         className="flex items-center justify-center rounded-full border-[0.5px]  border-[rgba(225,225,225,0.2)] px-4 py-2  text-sm font-extralight transition-all duration-300 hover:border-2 hover:border-orange-400 hover:text-orange-400"
-        href={"/Resume-William-Đinh.pdf"}
-        download="Resume-William-Đinh.pdf"
+        href={"/pdf/Resume-William-Đinh.pdf"}
+        target="_blank"
       >
         Download Resume
       </Link>
