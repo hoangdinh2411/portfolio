@@ -9,7 +9,7 @@ function Resume() {
       <Link
         className="flex items-center justify-center rounded-full border-[0.5px]  border-[rgba(225,225,225,0.2)] px-4 py-2  text-sm font-extralight transition-all duration-300 hover:border-2 hover:border-orange-400 hover:text-orange-400"
         href={"/pdf/Resume-William-Đinh.pdf"}
-        target="_self"
+        target="_blank"
       >
         Download Resume
       </Link>
