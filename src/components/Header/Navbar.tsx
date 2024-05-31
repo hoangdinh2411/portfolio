@@ -30,6 +30,11 @@ const menuItems = [
     link: "/resume",
     icon: "/icons/resume.svg",
   },
+  {
+    name: "Contact",
+    link: "/contact",
+    icon: "/icons/contact.svg",
+  },
 ];
 
 export default function Navbar() {

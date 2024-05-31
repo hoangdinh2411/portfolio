@@ -11,7 +11,7 @@ export interface ICardProps {
 
 function Card({ project }: ICardProps) {
   return (
-    <aside className="card hover:border-1 hover:scale-[1.1, 1.1] mb-4  flex min-h-[350px] w-full cursor-pointer flex-col items-start justify-normal overflow-hidden rounded-xl border-[0.5px] border-[rgba(225,225,225,0.2)] transition-all duration-500 hover:border-[rgba(225,225,225,1)] lg:mb-0">
+    <aside className="card mb-4 flex min-h-[350px]  w-full cursor-pointer flex-col items-start justify-normal overflow-hidden rounded-xl border-[0.5px] border-[rgba(225,225,225,0.2)] transition-all duration-500 hover:scale-110 hover:border-2 hover:border-[rgba(225,225,225,1)] lg:mb-0">
       <figure className="relative h-[300px] w-full overflow-hidden">
         <Image
           src={project.imageUrl}
@@ -45,7 +45,7 @@ function Card({ project }: ICardProps) {
             )}
           </Link>
         </h1>
-        <p className="text-md mb-4">{project.description}</p>
+        <p className="mb-4 text-base">{project.description}</p>
       </div>
       <div className=" mt-auto flex p-4">
         {project.tech.map((t) => {
@@ -53,6 +53,7 @@ function Card({ project }: ICardProps) {
           if (!techInfo) return null;
           return (
             <Image
+              key={t}
               src={techInfo.imageUrl}
               alt={techInfo.title}
               title={techInfo?.title}
