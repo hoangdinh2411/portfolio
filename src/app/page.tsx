@@ -1,9 +1,7 @@
 import Link from "next/link";
-import InfiniteAutoCarousel from "./components/InfiniteAutoCarousel";
+import InfiniteAutoCarousel from "../components/InfiniteAutoCarousel";
 import Image from "next/image";
-import { filterLogos, logos } from "./helps/constants";
-
-
+import { filterLogos, logos } from "../helps/constants";
 
 const links = [
   {
@@ -24,12 +22,12 @@ const links = [
 ];
 export default function Home() {
   return (
-    <section className="h-full flex items-center  lg:justify-between justify-center overflow-hidden flex-wrap">
+    <section className="flex h-full flex-wrap  items-center justify-center overflow-hidden lg:justify-between">
       <article className="lg:mr-auto  ">
-        <h1 className="text-6xl uppercase mb-10 typewriter">William Dinh</h1>
-        <p className="text-lg md:w-[500px]   w-full  ">
+        <h1 className="typewriter mb-10 text-6xl uppercase">William Dinh</h1>
+        <p className="w-full text-lg   md:w-[500px]  ">
           I'm{" "}
-          <b className="uppercase text-xl  text-orange-400 ">
+          <b className="text-xl uppercase  text-orange-400 ">
             {" "}
             a software engineer
           </b>{" "}
@@ -37,7 +35,7 @@ export default function Home() {
           , scalable and maintainable web applications using ReactJs, NextJs and
           building RESTful APIs using NestJs , ExpressJs and MongoDB.
         </p>
-        <div className="flex mt-4 ">
+        <div className="mt-4 flex ">
           {links.map((link, index) => (
             <Link
               href={link.url}
@@ -56,7 +54,7 @@ export default function Home() {
           ))}
         </div>
       </article>
-      <aside className="overflow-hidden rounded-sm  w-full lg:w-fit">
+      <aside className="w-full overflow-hidden  rounded-sm lg:w-fit">
         <InfiniteAutoCarousel options={filterLogos()} width={350} />
       </aside>
     </section>

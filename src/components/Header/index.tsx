@@ -5,8 +5,8 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="text-[#E1E1E1] h-[50px] bg-black  z-20 border-b-[0.5px] border-[rgba(225,225,225,0.2)] fixed top-0 w-full px-2 lg:px-0">
-      <div className="max-w-[1000px] ml-auto mr-auto w-full flex justify-between h-full">
+    <header className="fixed top-0 z-20  h-[50px] w-full border-b-[0.5px] border-[rgba(225,225,225,0.2)] bg-black px-2 text-[#E1E1E1] lg:px-0">
+      <div className="ml-auto mr-auto flex h-full w-full max-w-[1000px] justify-between">
         <article className=" h-full ">
           <Link href="/" title="Home Page" className="flex items-center">
             <Image
@@ -15,20 +15,13 @@ export default function Header() {
               height={32}
               alt="code icon"
             />
-            <h6 className="h-full leading-[50px] ml-2 text-lg">William Dinh</h6>
+            <h6 className="ml-2 h-full text-lg leading-[50px]">William Dinh</h6>
           </Link>
         </article>
         <input type="checkbox" name="" id="menu" className="lg:hidden" hidden />
         <Navbar />
-        <section className="h-full flex items-center w-[60px] justify-end">
-          <Image
-            src="/icons/search.svg"
-            width={24}
-            height={24}
-            alt="search icon"
-            className="cursor-pointer"
-          />
-          <label htmlFor="menu" className="lg:hidden">
+        <section className="flex h-full w-[60px] items-center justify-end lg:hidden">
+          <label htmlFor="menu">
             <Image
               src="/icons/menu.svg"
               width={24}
