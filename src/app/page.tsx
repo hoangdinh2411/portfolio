@@ -1,7 +1,8 @@
 import Link from "next/link";
 import InfiniteAutoCarousel from "../components/InfiniteAutoCarousel";
 import Image from "next/image";
-import { filterLogos, logos } from "../helps/constants";
+import { filterLogos } from "../helps/constants";
+import { Metadata } from "next";
 
 const links = [
   {
@@ -26,11 +27,10 @@ export default function Home() {
       <article className="lg:mr-auto  ">
         <h1 className="typewriter mb-10 text-6xl uppercase">William Dinh</h1>
         <p className="w-full text-lg   md:w-[500px]  ">
-          I'm{" "}
+          I&apos;m
           <b className="text-xl uppercase  text-orange-400 ">
-            {" "}
             a software engineer
-          </b>{" "}
+          </b>
           who loves to build web applications. I have experience building modern
           , scalable and maintainable web applications using ReactJs, NextJs and
           building RESTful APIs using NestJs , ExpressJs and MongoDB.
@@ -38,6 +38,7 @@ export default function Home() {
         <div className="mt-4 flex ">
           {links.map((link, index) => (
             <Link
+              key={link.title}
               href={link.url}
               title={link.title}
               target="_self"
@@ -60,3 +61,8 @@ export default function Home() {
     </section>
   );
 }
+
+export const metadata: Metadata = {
+  title: "My portfolio",
+  description: "...",
+};

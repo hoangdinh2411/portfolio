@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 export default function Header() {
   return (
     <header className="fixed top-0 z-20  h-[50px] w-full border-b-[0.5px] border-[rgba(225,225,225,0.2)] bg-black px-2 text-[#E1E1E1] lg:px-0">
-      <div className="ml-auto mr-auto flex h-full w-full max-w-[1000px] justify-between">
+      <div className="mx-auto flex  max-w-[1000px] justify-between">
         <article className=" h-full ">
           <Link href="/" title="Home Page" className="flex items-center">
             <Image

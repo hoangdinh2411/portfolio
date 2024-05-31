@@ -11,8 +11,10 @@ interface StepperProps {
 function Stepper({ steppers }: StepperProps) {
   return (
     <ol className="stepper cards">
-      {steppers.map(({ card, active }) => (
-        <li className={`${active ? "active" : ""} card`}>{card}</li>
+      {steppers.map(({ card, active }, index) => (
+        <li key={index} className={`${active ? "active" : ""} card`}>
+          {card}
+        </li>
       ))}
     </ol>
   );

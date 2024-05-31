@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { skills } from "../../helps/constants";
+import { Metadata } from "next";
 
 export default function Skills() {
   return (
-    <section className="flex h-full w-full flex-col  justify-start ">
+    <section className="flex size-full flex-col  justify-start ">
       <h1 className="mb-20 text-center text-6xl">Skills</h1>
       {Object.keys(skills).map((key, index: number) => {
         const group = skills[key as keyof typeof skills];
@@ -19,7 +20,7 @@ export default function Skills() {
               {group.data.map((item, i) => (
                 <div
                   key={item.title + i}
-                  className="group flex h-[70px] w-full  cursor-pointer items-center justify-between overflow-hidden rounded-full border-[0.5px] border-[rgba(225,225,225,0.2)] p-4  transition-all duration-500 ease-in hover:border-[1px] hover:border-[rgba(225,225,225,0.6)] hover:backdrop-blur-md"
+                  className="group flex h-[70px] w-full  cursor-pointer items-center justify-between overflow-hidden rounded-full border-[0.5px] border-[rgba(225,225,225,0.2)] p-4  transition-all duration-500 ease-in hover:border hover:border-[rgba(225,225,225,0.6)] hover:backdrop-blur-md"
                 >
                   <p className="text-[#E1E1E1]">{item.title}</p>
                   <Image
@@ -38,3 +39,8 @@ export default function Skills() {
     </section>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Skills",
+  description: "This is the skills I have learned and used in the past.",
+};

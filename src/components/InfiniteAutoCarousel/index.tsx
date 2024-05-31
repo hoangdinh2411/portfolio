@@ -13,7 +13,7 @@ type Props = {
 export default function InfiniteAutoCarousel({ options, width }: Props) {
   return (
     <div
-      className={`slider ]`}
+      className={`slider `}
       style={{
         width: width ? `${width}px` : "100%",
       }}

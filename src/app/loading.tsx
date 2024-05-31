@@ -3,7 +3,7 @@ import * as React from "react";
 
 function Loading() {
   return (
-    <div className="z-100 fixed right-0 top-0 flex h-full w-full items-center justify-center">
+    <div className="fixed right-0 top-0 z-50 flex size-full items-center justify-center">
       <LoadingComponent />
     </div>
   );
