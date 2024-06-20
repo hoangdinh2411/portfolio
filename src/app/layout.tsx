@@ -24,6 +24,7 @@ export default function RootLayout({
 export const metadata: Metadata = {
   title: {
     template: "%s | William Dinh - Software Engineer",
-    default: "William Dinh - Software Engineer",
+    default: "William Dinh - Software Engineer ",
   },
+  description: "William Dinh - Software Engineer",
 };
