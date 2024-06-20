@@ -5,7 +5,9 @@ function Contact() {
   return (
     <section className="flex size-full flex-col  items-center justify-start">
       <h1 className="mb-20 text-center text-6xl">Contact</h1>
-      <p className="mb-4 text-center text-3xl">You can reach out to me at </p>
+      <p className="mb-4 text-center text-3xl">
+        Feel free to reach out to me by{" "}
+      </p>
       <article className="grid grid-cols-2">
         <div>
           <p className="text-orange-400">Email:</p>

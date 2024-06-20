@@ -41,7 +41,7 @@ export default function Home() {
               key={link.title}
               href={link.url}
               title={link.title}
-              target="_self"
+              target="_blank"
               className="mx-2"
             >
               <Image
@@ -63,6 +63,7 @@ export default function Home() {
 }
 
 export const metadata: Metadata = {
-  title: "My portfolio",
-  description: "...",
+  title: "William Dinh Software Engineer",
+  description:
+    "This is the homepage of William Dinh who is a software engineer.",
 };

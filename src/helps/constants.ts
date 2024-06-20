@@ -105,11 +105,19 @@ Implemented CI/CD pipelines for the project to automatically deploy Frontend on 
 
 export const educations = [
   {
-    education: "Devops Engineer",
+    education: "Azure Devops Engineer",
     finish: true,
     time: "4/2024 - 6/2024",
     land: "Sweden",
-    tech: ["Docker", "Azure", "CI/CD", "Kubernetes"],
+    tech: [
+      "Docker",
+      "Azure",
+      "CI/CD",
+      "Kubernetes",
+      "Jenkins",
+      "Github Actions",
+      "Gitlab CI",
+    ],
   },
   {
     education: "Bachelor degree in Software Engineering using Javascript",
@@ -133,7 +141,7 @@ export const experiences = [
   {
     position: "Web developer (Internship - Full-time)",
     company: "Plejd AB, Gothenburg, Sweden",
-    date: "1/2024 - 6/2024",
+    date: "",
     finish: true,
     description:
       "We are rebuilding and refactoring the application, Fixing issues, and improving the performance of the application.",
@@ -142,7 +150,7 @@ export const experiences = [
   {
     position: "Frontend developer (Self-employed)",
     company: "Ecomx, Vietnam",
-    date: "8/2022 - 5/2023",
+    date: "",
     finish: true,
     description:
       "Managed a team of 3 developers to build an E-commerce project that sells technology accessories, for instance, keyboards and computer mice, mobile accessories, etc.. Sometimes I help to improve or create new Apis.",
@@ -161,7 +169,7 @@ export const experiences = [
   {
     position: "Frontend developer (Freelancer)",
     company: "Ecomx, Vietnam",
-    date: "1/2022 - 8/2022",
+    date: "",
     finish: true,
     description:
       "Building UI the same as designing and maintaining existing one's applications and systems. Collaborates with testers to ensure a seamless and high-quality user experience",
