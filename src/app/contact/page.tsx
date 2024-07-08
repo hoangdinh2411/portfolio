@@ -14,7 +14,7 @@ function Contact() {
           <p className="text-orange-400"> Phone: </p>
         </div>
         <div>
-          <p>hoangdinh2411@gmail.com</p>
+          <p>william.dinh.dev@gmail.com</p>
           <p>+46729154846</p>
         </div>
       </article>
