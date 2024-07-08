@@ -21,8 +21,8 @@ function Card({ experience }: ICardProps) {
       <span className="mb-2 text-sm font-extralight">{experience.company}</span>
       <span className="mb-2 text-sm font-extralight">{experience.date}</span>
       <p className="mb-4 text-sm font-extralight">
-        {experience.description.split(". ").map((d) => (
-          <span>
+        {experience.description.split(". ").map((d, index) => (
+          <span key={index}>
             - {d}
             <br />
           </span>
