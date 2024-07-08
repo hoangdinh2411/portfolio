@@ -45,7 +45,14 @@ function Card({ project }: ICardProps) {
             )}
           </Link>
         </h1>
-        <p className="mb-4 text-base">{project.description}</p>
+        <p className="mb-4 text-base">
+          {project.description.split(". ").map((d, index) => (
+            <span key={index}>
+              - {d}
+              <br />
+            </span>
+          ))}
+        </p>
       </div>
       <div className=" mt-auto flex p-4">
         {project.tech.map((t) => {

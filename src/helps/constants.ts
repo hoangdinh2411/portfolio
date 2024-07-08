@@ -87,7 +87,7 @@ export const projects = [
   {
     title: "Spreed - Plejd",
     description:
-      "Performance Dashboard for Product Testing This web page provides an overview of product performance and testing metrics through charts and test statistics. We are rebuilding and refactoring the application, Fixing issues, and improving the performance of the application Because the product is for internal use , so I just leave a image of the product I did .",
+      "Building features and fixing bugs for SPREED project.  Refactoring the source code, making it more readable and maintainable.  Optimization the performance of the application through reducing re-rendering, memorization, code splitting and so on . Increasing user experience faster and smother, helping tester save a lot of time to check the quality of the products",
     imageUrl: "/images/spreed-plejd.png",
     tech: ["React", "Typescript", "Material UI", "Docker", "NestJs", "MongoDB"],
     link: "",
@@ -105,7 +105,7 @@ Implemented CI/CD pipelines for the project to automatically deploy Frontend on 
 
 export const educations = [
   {
-    education: "Azure Devops Engineer",
+    education: "Bachelor's degree in Azure Devops Engineer",
     finish: true,
     time: "4/2024 - 6/2024",
     land: "Sweden",
@@ -120,7 +120,8 @@ export const educations = [
     ],
   },
   {
-    education: "Bachelor degree in Software Engineering using Javascript",
+    education:
+      "Bachelor's degree in Fullstack Software Engineering , focusing on Javascript",
     time: "8/2022 - 6/2024  ",
     finish: true,
     land: "Sweden",
@@ -144,7 +145,7 @@ export const experiences = [
     date: "",
     finish: true,
     description:
-      "We are rebuilding and refactoring the application, Fixing issues, and improving the performance of the application.",
+      "Building features and fixing bugs for SPREED project. Refactoring the source code, making it more readable and maintainable. Optimization the performance of the application through reducing re-rendering, memorization, code splitting and so on. Increasing user experience faster and smother, helping tester save a lot of time to check the quality of the products",
     tech: ["React", "Typescript", "Material UI", "Docker", "NestJs", "MongoDB"],
   },
   {
